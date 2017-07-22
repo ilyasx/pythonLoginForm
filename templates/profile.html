@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to profile </title>
+</head>
+<body>
+    <h4>Username: </h4>{{ profile[0]}}
+    <h4>Password: </h4>{{ profile[1]}}
+    <h4>FirstName: </h4>{{ profile[2]}}<br/>
+    <h4>LastName: </h4>{{ profile[3]}}<br/>
+    <h4>Description: </h4>{{ profile[4]}}<br/>
+    <h4>ProfilePic: </h4><br/>
+   <img src="{{url_for('static', filename= 'upload/'+profile[5])}}" width="200" height="200"/>
+</body>
+</html>

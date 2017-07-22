@@ -1,0 +1,4 @@
+pandas==0.20.2
+wtforms==2.1
+flask_wtf==0.14.2
+flask==0.12.2

@@ -1,0 +1,19 @@
+<html>
+    <title>Login Form </title>
+    <body>
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() if form.hidden_tag }}
+            {% for f in form if f.type != 'CSRFTokenField' %}
+            {% endfor %}
+            {% for field in form %}
+                <br/>
+                {{field.label}}
+                <br/>
+                {{field}}
+                <br/>
+
+            {% endfor %}
+            <input type="submit" />
+        </form>
+    </body>
+</html>
